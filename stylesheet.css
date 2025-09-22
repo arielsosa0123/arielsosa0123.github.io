@@ -1,0 +1,73 @@
+header{
+	background-image: url(NorthCampus.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 60px
+}
+nav {
+	background-color: rgba(0, 0, 255, 0.3);
+	padding: 1px 1px 1px 1px;
+	height: 59px;
+}
+
+ol.navbar li {
+	background-color: white;
+	border-radius: 9px 9px 9px 9px;
+	color: white;
+	margin: 2px;
+	padding: 2px 2px 2px 2px;
+	display: inline;
+}
+
+ol.navbar a{
+	border-radius: 9px 9px 9px 9px;
+	color: blue;
+	text-decoration: none;
+}
+
+ol.navbar a:hover{
+	background-color: Blue;
+	color: white;
+}
+
+h1 {
+	display: block;
+	border-radius: 22px;
+	background-color: blue;
+	text-align: center;
+	font-size: 40px;
+	font-family: perpetua;
+	font-weight: bold;
+	color: white;
+}
+
+p {
+	font-family: perpetua;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+IMG{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	height: 150px;
+}
+
+div.footer{
+	background-image: url(NiceBackground.jpg);
+	padding: 2px 2px 2px 2px;
+	border-radius: 22px;
+	display: block;
+	line-height: 100px;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	font-size: 20px;
+	font-family: perpetua;
+	font-weight: bold;
+	height: 100px;
+}
+
