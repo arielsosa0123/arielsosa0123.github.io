@@ -1,7 +1,12 @@
-header{
+body{
+	background-color: rgba(200, 200, 200, 0.75);
+}
+
+#head{
 	background-image: url(NorthCampus.jpg);
 	background-size: cover;
 	background-position: center;
+	margin: -1% -1% 0% -1%;
 	height: 60px
 }
 nav {
