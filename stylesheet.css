@@ -37,10 +37,11 @@ ol.navbar a:hover{
 
 #h1 {
 	display: block;
-	border-radius: 22px;
+	margin: -1.3% -1.3% -1% -1.3%;
 	background-color: blue;
+	border: 1px ridge black;
 	text-align: center;
-	font-size: 40px;
+	font-size: 25px;
 	font-family: perpetua;
 	font-weight: bold;
 	color: white;
