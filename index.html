@@ -46,9 +46,15 @@
     	building my skills.</p>
 		</div> <!-- end class="homecontent" -->
 			
-		<IMG src="MyPhoto.jpg" alt="My Photo"> 
+		<IMG src="images/MyPhoto.jpg" alt="My Photo"> 
 
 		<p><a href="OfficialResume2026-Ariel.pdf" download="Resume-ArielSosa-2026">Download My Resume</a></p>
+		
+		<a href="https://www.linkedin.com/in/arielsosa0123/" title="LinkedInProfile" target="_blank"><img src="images/LinkedIn1.png" alt="link" class="icon"></a>
+		<a href="https://github.com/arielsosa0123" title="GitHubProfile" target="_blank"><img src="images/GitHubIcon.png" alt="link" class="icon" style="margin-left: 0px"></a>
+		<IMG src="images/GmailIcon.png" id="gmailIcon" title="Email" class="Gmail" alt="MyEmail" style="margin-left: 0px;">
+		
+		
 
 		<br>
 
@@ -59,5 +65,22 @@
 	<div class="right">
 	</div> <!-- end class="right" -->
 </BODY>
+
+<script>
+	const icon = document.getElementById("gmailIcon");
+
+	icon.addEventListener("click", function () {
+  		// Copy email
+  		navigator.clipboard.writeText("arielsosa0123@gmail.com");
+
+  		// Change tooltip text
+  		icon.title = "Email Copied!";
+
+  		// Change it back after 2 seconds
+  		setTimeout(() => {
+    		icon.title = "Email";
+  		}, 7000);
+	});
+</script>
 
 </HTML>

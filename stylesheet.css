@@ -102,6 +102,22 @@ p {
 	font-size: 15px;
 }
 
+.icon{
+	width: 50px;
+	height: 50px;
+	margin-left: 230px;
+	position: relative;
+	display: inline-block;
+}
+
+.Gmail{
+	width: 50px;
+	height: 50px;
+	margin-left: 230px;
+	position: relative;
+	display: inline-block;
+}
+
 IMG{
 	display: block;
 	margin-left: auto;
@@ -111,7 +127,7 @@ IMG{
 }
 
 .footer{
-	background-image: url(NiceBackground.jpg);
+	background-image: url(images/NiceBackground.jpg);
 	margin: 0% -1.3% 0% -1.3%;
 	padding: 1%;
 	display: block;
