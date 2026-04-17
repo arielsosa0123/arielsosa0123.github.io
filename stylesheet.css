@@ -105,12 +105,13 @@ p {
 .icon-Container{
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	text-align: center;
 	gap: 20px;
 	margin-top: 20px;
-	width: 100%;
-	margin: 0 auto;
+}
+
+.icon-wrap{
+	display: inline-block;
+	animation: bounce 2s infinite ease-in-out;
 }
 
 .icon{
@@ -119,10 +120,14 @@ p {
 	cursor: pointer;
 }
 
-.Gmail{
-	width: 50px;
-	height: 50px;
-	cursor: pointer;
+@keyframes bounce {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-3px); }
+}
+
+.icon:hover {
+	transform: scale(1.1);
+	transition: 0.2s;
 }
 
 .profileImg{

@@ -16,7 +16,7 @@
 	<nav>
 		<ol class="navbar">
 			<li> <a href="index.html" title="MyHomepage">Homepage</a>
-			<li> <a href="ContactMe.html" title="ContactMe">Contact Me</a>
+			<!-- <li> <a href="ContactMe.html" title="ContactMe">Contact Me</a> -->
 		</ol>
 	</nav>
 	</div> <!-- end id="head" -->
@@ -51,9 +51,15 @@
 		<p><a href="OfficialResume2026-Ariel.pdf" download="Resume-ArielSosa-2026">Download My Resume</a></p>
 		
 		<div class="icon-Container">
-			<a href="https://www.linkedin.com/in/arielsosa0123/" title="LinkedInProfile" target="_blank"><img src="images/LinkedIn1.png" alt="link" class="icon"></a>
-			<a href="https://github.com/arielsosa0123" title="GitHubProfile" target="_blank"><img src="images/GitHubIcon.png" alt="link" class="icon" style="margin-left: 0px"></a>
-			<IMG src="images/GmailIcon.png" id="gmailIcon" title="Email" class="Gmail" alt="MyEmail" style="margin-left: 0px;">
+			<div class="icon-wrap" style="animation-delay: 0s;">
+				<a href="https://www.linkedin.com/in/arielsosa0123/" title="LinkedInProfile" target="_blank"><img src="images/LinkedIn1.png" alt="link" class="icon"></a>
+			</div>
+			<div class="icon-wrap" style="animation-delay: 0.4s;">
+				<a href="https://github.com/arielsosa0123" title="GitHubProfile" target="_blank"><img src="images/GitHubIcon.png" alt="link" class="icon"></a>
+			</div>
+			<div class="icon-wrap" style="animation-delay: 0.8s;">
+				<IMG src="images/GmailIcon.png" id="gmailIcon" title="Email" class="icon" alt="MyEmail">
+			</div>
 		</div>
 		
 
@@ -68,6 +74,7 @@
 </BODY>
 
 <script>
+
 	const icon = document.getElementById("gmailIcon");
 
 	icon.addEventListener("click", function () {
@@ -82,6 +89,7 @@
     		icon.title = "Email";
   		}, 7000);
 	});
+
 </script>
 
 </HTML>
