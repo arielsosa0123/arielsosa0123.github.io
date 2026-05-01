@@ -86,9 +86,9 @@ ol.navbar a:hover{
 	background-position: 0 0;
 	image-rendering: pixelated;
 
-	position: relative;
+	position: absolute;
 	left: -100px;
-	top: 70%;
+	top: 10px;
 	z-index: 10;
 
 	transform: scale(3);
@@ -99,7 +99,7 @@ ol.navbar a:hover{
     padding: 1rem;
 	margin: 0 auto; /*margin: 0 auto;*/
     width: 90%;
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-bottom: 50px;
 	border-radius: 10%;
 }

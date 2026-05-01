@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <HTML lang="en-us">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <HEAD>
 	<TITLE>Ariel's Homepage</TITLE>
@@ -147,14 +148,15 @@
 		}, 200)
 
 		function swimAcross() {
+
+			screenWidth = $(window).width();
 			$("#octopus")
 			.stop(true, true)
 			.css({
-				left: "-100px",
-				top: "70%"
+				left: -100,
 			})
 			.animate(
-				{ left: "110vw" },
+				{ left: screenWidth + 100 },
 				10000,
 				"linear",
 				function () {
