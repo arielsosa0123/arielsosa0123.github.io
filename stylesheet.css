@@ -98,10 +98,16 @@ ol.navbar a:hover{
     width: 90%;
 	margin-top: 30px;
 	margin-bottom: 50px;
-	border-radius: 10%;
+	border-radius: 5%;
 }
 
 @media (max-width: 768px) {
+	body{
+		background-position: center;
+		background-attachment: scroll;
+		overflow: hidden;
+	}
+
 	#octopus{
 		position: fixed;
 		top: 10px;
@@ -111,7 +117,7 @@ ol.navbar a:hover{
 		border-radius: 20px;
 		width: 95%;
 		box-sizing: border-box;
-		margin: 20px auto; /*margin: 0 auto;*/
+		margin: 30px auto; /*margin: 0 auto;*/
     	width: min(90%, 900px);
 	}
 }
@@ -206,6 +212,7 @@ p {
 
 #download{
 	text-decoration: none;
+	color: black;
 }
 
 .button{
