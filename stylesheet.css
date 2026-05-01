@@ -105,7 +105,8 @@ ol.navbar a:hover{
 	body{
 		background-position: center;
 		background-attachment: scroll;
-		overflow: hidden;
+		overflow-x: hidden;
+		overflow-y: auto;
 	}
 
 	#octopus{
