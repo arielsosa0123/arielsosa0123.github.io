@@ -3,10 +3,7 @@ body{
 	background-image: url(images/image3.jpg);
 	background-size: cover;
 	/*Temp*/
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
+	margin: 0;
 }
 
 #head{
@@ -55,7 +52,7 @@ ol.navbar a:hover{
 	font-weight: bold;
 	color: black;
 }
-
+/*
 .left{
 	background-color: rgba(0, 0, 255, 0.75);
 	color: white;
@@ -66,25 +63,26 @@ ol.navbar a:hover{
 	height: 110vh;
 }
 
-#main{
-	background-color: rgba(200, 200, 200, 0.90);
-    padding: 1%;
-	margin: 50px 0; /*margin: 0 auto;*/
-    width: 90%;
-	/*margin-top: 50px;*/
-	margin-bottom: 50px;
-	border-radius: 10%;
-}
-
 .right{
 	background-color: rgba(0, 0, 255, 0.75);
 	color: white;
-	/**clear: right;**/
+	/**clear: right;**//*
     float: right;
     padding: 1%;
 	margin: 0% -1% 0% 0%;
     width: 10%;
 	height: 110vh;
+}*/
+
+#main{
+	background-color: rgba(200, 200, 200, 0.90);
+    padding: 1rem;
+	box-sizing: border-box;
+	margin: 0 auto 50px auto; /*margin: 0 auto;*/
+    width: min(90%, 900px);
+	/*margin-top: 50px;*/
+	/*margin-bottom: 50px;*/
+	border-radius: 10%;
 }
 
 .homecontent{
