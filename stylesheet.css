@@ -73,13 +73,33 @@ ol.navbar a:hover{
     width: 10%;
 	height: 110vh;
 }*/
+#top{
+	margin-top: 5px;
+}
+#octopus{
+	/*margin-top: 50px;
+	margin-left: 10px;*/
+	width: 32px;
+	height: 32px;
+	background-image: url(images/octopusSprite.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	image-rendering: pixelated;
+
+	position: relative;
+	left: -100px;
+	top: 70%;
+	z-index: 10;
+
+	transform: scale(3);
+}
 
 #main{
 	background-color: rgba(200, 200, 200, 0.90);
     padding: 1rem;
 	margin: 0 auto; /*margin: 0 auto;*/
     width: 90%;
-	margin-top: 50px;
+	margin-top: 10px;
 	margin-bottom: 50px;
 	border-radius: 10%;
 }

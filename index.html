@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <HTML lang="en-us">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <HEAD>
 	<TITLE>Ariel's Homepage</TITLE>
@@ -17,12 +18,14 @@
 		<ol class="navbar">
 			<li> <a href="index.html" title="MyHomepage">Homepage</a>
 			<!-- <li> <a href="ContactMe.html" title="ContactMe">Contact Me</a> -->
-		</ol>
+		<!-- </ol>
 	</nav>
 	</div> <!-- end id="head" -->
 
 	<!--<div class="left">
-	</div> <!-- end class="left" --> -->
+	</div> <!-- end class="left" -->\
+	<div id="top"></div>
+	<div id="octopus"></div>
 	<div id="main">
 	<main>
 
@@ -127,6 +130,41 @@
     		icon.title = "Email";
   		}, 7000);
 	});
+	$(document).ready(function() {
+		let frame = 0;
+		let row = 0;
+
+		const frameWidth = 32;
+		const frameHeight = 32;
+		const totalFrames = 4;
+
+		setInterval(function() {
+			let x = -frame * frameWidth;
+			let y = -row * frameHeight;
+
+			$('#octopus').css("background-position", x + "px " + y + "px");
+			frame = (frame + 1) % totalFrames;
+		}, 200)
+
+		function swimAcross() {
+			$("#octopus")
+			.stop(true, true)
+			.css({
+				left: "-100px",
+				top: "70%"
+			})
+			.animate(
+				{ left: "110vw" },
+				10000,
+				"linear",
+				function () {
+					setTimeout(swimAcross, 1000);
+				}
+			);
+		}
+
+		swimAcross();
+	})
 
 </script>
 
