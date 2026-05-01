@@ -73,9 +73,6 @@ ol.navbar a:hover{
     width: 10%;
 	height: 110vh;
 }*/
-#top{
-	margin-top: 5px;
-}
 #octopus{
 	/*margin-top: 50px;
 	margin-left: 10px;*/
@@ -105,12 +102,21 @@ ol.navbar a:hover{
 }
 
 @media (max-width: 768px) {
+	body{
+		background-position: center;
+		background-attachment: scroll;
+		overflow: hidden;
+	}
+	#octopus{
+		position: fixed;
+		top: 10px;
+	}
+
 	#main{
-		margin-top: 20px;
-		margin-bottom: 20px;
+		border-radius: 20px;
 		width: 95%;
 		box-sizing: border-box;
-		margin: 0 auto 50px auto; /*margin: 0 auto;*/
+		margin: 20px auto; /*margin: 0 auto;*/
     	width: min(90%, 900px);
 	}
 }
