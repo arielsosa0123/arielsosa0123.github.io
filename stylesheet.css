@@ -79,8 +79,8 @@ ol.navbar a:hover{
     padding: 1rem;
 	margin: 0 auto; /*margin: 0 auto;*/
     width: 90%;
-	/*margin-top: 50px;*/
-	/*margin-bottom: 50px;*/
+	margin-top: 50px;
+	margin-bottom: 50px;
 	border-radius: 10%;
 }
 
