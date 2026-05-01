@@ -102,11 +102,6 @@ ol.navbar a:hover{
 }
 
 @media (max-width: 768px) {
-	body{
-		background-position: center;
-		background-attachment: scroll;
-		overflow: hidden;
-	}
 	#octopus{
 		position: fixed;
 		top: 10px;
