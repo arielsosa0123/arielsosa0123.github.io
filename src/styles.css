@@ -606,6 +606,7 @@ button:focus-visible {
   height: min(58dvh, 610px);
   overflow: auto;
   overscroll-behavior: contain;
+  scrollbar-gutter: stable;
   border: 1px solid #61717a;
   border-radius: 9px;
   background: #46535b;
@@ -617,16 +618,22 @@ button:focus-visible {
 }
 
 .certificate-viewer .react-pdf__Document {
-  width: max-content;
-  min-width: 100%;
+  width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   padding: 12px;
 }
 
 .certificate-viewer .react-pdf__Page {
-  width: max-content;
+  width: min(980px, 100%);
   margin: 0 auto 12px;
   box-shadow: 0 2px 8px #0005;
+}
+
+.certificate-viewer .react-pdf__Page canvas {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .certificate-viewer .react-pdf__Page:last-child {

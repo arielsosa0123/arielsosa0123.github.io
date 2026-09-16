@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import 'react-pdf/dist/Page/TextLayer.css';
 import { certifications } from '../certifications.js';
 import { profile } from '../profile.js';
 
@@ -9,48 +8,38 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url,
 ).toString();
 
-function CertificateViewer({ certification }) {
-  const viewerRef = useRef(null);
-  const [pageCount, setPageCount] = useState(0);
-  const [pageWidth, setPageWidth] = useState(0);
+const CERTIFICATE_RENDER_WIDTH = 980;
 
-  useEffect(() => {
-    const observer = new ResizeObserver(([entry]) => {
-      setPageWidth(Math.min(980, Math.max(1, entry.contentRect.width - 24)));
-    });
-    observer.observe(viewerRef.current);
-    return () => observer.disconnect();
-  }, []);
+function CertificateViewer({ certification }) {
+  const [pageCount, setPageCount] = useState(0);
 
   return (
     <div className="certificate-display">
       <div
         className="certificate-viewer"
-        ref={viewerRef}
         tabIndex={0}
         role="region"
         aria-label={`Scrollable ${certification.title} certificate`}
       >
-        {pageWidth > 0 && (
-          <Document
-            file={certification.file}
-            suspense={false}
-            onLoadSuccess={({ numPages }) => setPageCount(numPages)}
-            loading={<p role="status">Loading certificate…</p>}
-            error={<p role="alert">This certificate could not load. Please refresh the page to try again.</p>}
-          >
-            {Array.from({ length: pageCount }, (_, index) => (
-              <Page
-                key={index + 1}
-                pageNumber={index + 1}
-                width={pageWidth}
-                renderAnnotationLayer={false}
-                loading={<p role="status">Loading certificate page…</p>}
-                error={<p role="alert">This certificate page could not load.</p>}
-              />
-            ))}
-          </Document>
-        )}
+        <Document
+          file={certification.file}
+          suspense={false}
+          onLoadSuccess={({ numPages }) => setPageCount(numPages)}
+          loading={<p role="status">Loading certificate…</p>}
+          error={<p role="alert">This certificate could not load. Please refresh the page to try again.</p>}
+        >
+          {Array.from({ length: pageCount }, (_, index) => (
+            <Page
+              key={index + 1}
+              pageNumber={index + 1}
+              width={CERTIFICATE_RENDER_WIDTH}
+              renderAnnotationLayer={false}
+              renderTextLayer={false}
+              loading={<p role="status">Loading certificate page…</p>}
+              error={<p role="alert">This certificate page could not load.</p>}
+            />
+          ))}
+        </Document>
       </div>
     </div>
   );
