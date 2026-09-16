@@ -1,0 +1,32 @@
+export const certifications = [
+  {
+    code: 'AI110',
+    title: 'Foundations of AI Engineering',
+    award: 'Honors',
+    term: 'Summer 2026',
+    certificateId: '418477',
+    file: '/certifications/OfficialCertification-AI110-Ariel.pdf',
+    description: 'A project-based foundation in AI-assisted software development that combines core computer science concepts with responsible use of modern AI tools. The course emphasizes human oversight: understanding, testing, and improving generated code instead of accepting it without review.',
+    learning: 'I strengthened my Python, data structures, algorithms, and object-oriented programming skills while using AI tools for coding, debugging, refactoring, and system design. I practiced evaluating AI-generated code, explored supervised, unsupervised, and generative machine learning, and worked with concepts such as retrieval-augmented generation, agentic workflows, fine-tuning, guardrails, testing, and GitHub collaboration. The course culminated in building and presenting an application with responsible AI integration.',
+  },
+  {
+    code: 'WEB102',
+    title: 'Intermediate Web Development',
+    award: 'Honors',
+    term: 'Summer 2026',
+    certificateId: '412491',
+    file: '/certifications/OfficialCertificationWEB102-Ariel.pdf',
+    description: 'An intermediate, project-based web development course focused on designing, building, and deploying interactive applications with React, APIs, and connected data. The work connects front-end architecture to practical application behavior and deployment.',
+    learning: 'I learned to build React interfaces with JSX, functional components, props, state, hooks, event handling, forms, and dynamic rendering. I integrated public APIs with asynchronous requests, organized multi-page experiences with React Router, and implemented create, read, update, and delete (CRUD) operations through connected APIs. I also practiced responsive design, application polish, deployment, AI-assisted debugging and research, presenting technical projects, and explaining design decisions to others.',
+  },
+  {
+    code: 'TIP101',
+    title: 'Intro to Technical Interview Prep',
+    award: 'Achievement',
+    term: 'Spring 2026',
+    certificateId: '393478',
+    file: '/certifications/OfficialCertificationTIP101-Ariel.pdf',
+    description: 'An adaptive technical-interview course that develops problem-solving foundations through Python challenges, core data structures, algorithm analysis, collaborative practice, and mock interviews. It emphasizes both correct solutions and clear communication of the reasoning behind them.',
+    learning: 'I developed a structured approach to interview problems with CodePath’s UMPIRE method and improved my Python fluency, Big O analysis, and ability to explain solutions. My practice covered strings and lists, two-pointer techniques, dictionaries and hash maps, object-oriented programming, linked lists, recursion, binary search, merge sort, binary trees, and depth-first and breadth-first traversal. Timed HackerRank assessments, peer problem solving, and mock interviews strengthened my confidence and technical communication.',
+  },
+];
